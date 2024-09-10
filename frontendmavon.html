@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mavoncss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+     <!-- nav_bar_container start -->
+     <div class="nav_bar_container common_container">
+        <div class="web_name_container">MAVENHUB</div>
+        <div class="search_bar_container">
+            <!-- <div class="input_search_container"><input type="text" class="search_bar_home_container" placeholder="Search here..."></div>
+            <div class="search_symbol_container"><div class="magnify_class_holder">
+                <i class="fa-solid fa-magnifying-glass magnifying_glass"></i>
+            </div></div> -->
+            <div class="container">
+                <input id="searchbar" 
+                       onkeyup="search_animal()" 
+                       type="text" name="search" 
+                       placeholder="Search..">
+        
+                <ul id='list'>
+                    <li class="animals"><a href="./frontendmavon.html" id="classid">Frontend</a></li>
+                    <li class="animals"><a href="./frontendmavon.html" id="classid">Backend</a></li>
+                    <li class="animals"><a href="./frontendmavon.html" id="classid">FullStack Developer</a></li>
+        
+                </ul>
+            </div>
+        
+        </div>
+        <div class="right_navbar_container">
+            <div class="howitworks_container"><a href="" class="how_link">HOW IT WORKS</a></div>
+            <div class="login_home_container"><a href="mavonlogin.html" class="how_link">LOGIN</a></div>
+            <div class="signup_home_container"><a href="mavonsignup.html" class="how_link">SIGN UP</a></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<div class="top_front_container common_container">
+    <div class="posts_container">POST</div>
+    <div class="posts_container">RATING</div>
+    <div class="posts_container">COURSE</div>
+    <div class="posts_container">COMPANIES</div>
+    <div class="posts_container">LOCALITY</div>
+    <div class="posts_container">SERVICES</div>
+
+</div>
+
+
+    <div class="whole_front_container common_container">
+        <div class="left_front_container">
+            <h1 class="onttile_container">On this page</h1>
+            <p class="down_onthispage_list">Jobs</p>
+            <p class="down_onthispage_list">Posts</p>
+            <p class="down_onthispage_list">People</p>
+            <p class="down_onthispage_list">Groups</p>
+            <p class="down_onthispage_list">Products</p>
+            <p class="down_onthispage_list">Companies</p>
+            <p class="down_onthispage_list">More jobs</p>
+        </div>
+        <div class="right_fron_container">
+            <h1 class="velai_title_container">JOBS</h1>
+            <div class="all_frontend_content_starts">
+            <div class="frontend_box_container"><a href="freelanceportfolio.html">
+                <div class="job_company_container">WILLIAM <span class="filter_based_on_ratings">RATINGS : 8.8 / 10</span></div>
+                <div class="job_title_container"><span> Available : </span> &nbsp; FRONTEND DEVELOPER</div>
+
+            </a>
+            </div>
+
+            <!-- <div class="hired_developers_list">
+                <div class="dvlpr_name_container">JOHN MILTON <img src="./mdi_tick-decagram.png" alt="" class="ticksymbol"></div>
+                <div class="role_frontend_container"><span>Role : </span>&nbsp;FRONTEND</div>
+            </div>
+            <div class="hired_developers_list">
+                <div class="dvlpr_name_container">WORDSWORTH <img src="./mdi_tick-decagram.png" alt="" class="ticksymbol"></div>
+                <div class="role_frontend_container"><span>Role : </span>&nbsp;FRONTEND</div>
+            </div> -->
+
+            <div class="frontend_box_container"><a href="freelanceportfolio.html">
+                <div class="job_company_container">SHAKES &nbsp; <span class="filter_based_on_ratings">RATINGS : 8.7 / 10</span></div>
+                <div class="job_title_container"><span> Available : </span> &nbsp; FRONTEND DEVELOPER</div>
+            </a>
+            </div>
+
+            <div class="frontend_box_container"><a href="freelanceportfolio.html">
+                <div class="job_company_container">KENNEDY<span class="filter_based_on_ratings">RATINGS : 8.6 / 10</span></div>
+                <div class="job_title_container"><span> Available : </span> &nbsp; FRONTEND DEVELOPER</div></a>
+            </div>
+            <div class="frontend_box_container"><a href="freelanceportfolio.html">
+                <div class="job_company_container">JOSEPH &nbsp;<span class="filter_based_on_ratings">RATINGS : 8.5 / 10</span></div>
+                <div class="job_title_container"><span> Available : </span> &nbsp; FRONTEND DEVELOPER</div></a>
+            </div>
+            <div class="frontend_box_container"><a href="freelanceportfolio.html">
+                <div class="job_company_container">CENA &nbsp; &nbsp;<span class="filter_based_on_ratings">&nbsp;RATINGS : 8.4 / 10</span></div>
+                <div class="job_title_container"><span> Available : </span> &nbsp; FRONTEND DEVELOPER</div></a>
+            </div>
+            <div class="frontend_box_container"><a href="freelanceportfolio.html">
+                <div class="job_company_container">BROCKS <span class="filter_based_on_ratings">RATINGS : 8.3 / 10</span></div>
+                <div class="job_title_container"><span> Available : </span> &nbsp; FRONTEND DEVELOPER</div></a>
+            </div>
+            <div class="frontend_box_container"><a href="freelanceportfolio.html">
+                <div class="job_company_container">KOG &nbsp; &nbsp;<span class="filter_based_on_ratings"> &nbsp; &nbsp;RATINGS : 8.2 / 10</span></div>
+                <div class="job_title_container"><span> Available : </span> &nbsp; FRONTEND DEVELOPER</div></a>
+            </div>
+            </div>
+
+            
+
+
+
+        </div>
+        <div class="left_front_container ex_container">
+            <h1 class="onttile_container">Premium Features</h1>
+            <p class="down_onthispage_list">Marketing</p>
+            <p class="down_onthispage_list">Recruitment</p>
+            <p class="down_onthispage_list">Sales</p>
+            <p class="down_onthispage_list">Learning products</p>
+            <p class="down_onthispage_list">More jobs</p>
+        </div>
+    </div>
+
+<script src="mavon.js"></script>
+</body>
+</html>

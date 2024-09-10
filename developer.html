@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="mavoncss.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CSS -->
+<style>
+  #zoomMeetingButton {
+    background: none;
+    border:solid 0.1rem white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    padding-left: 2rem;
+  }
+  span{
+    padding-left: 1.5rem;
+  }
+
+  #zoomMeetingButton i {
+    margin-left: -20px;
+    
+  }
+</style>
+</head>
+<body data-user-type="developer">
+
+
+  <div class="title_container_comm2">
+
+    <div id="parentraa" style="display: none;"> DEV :</div>
+
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Developer Chat</h2>
+            <!-- Include FontAwesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- HTML -->
+<form action="https://zoom.us/" target="_blank">
+<button id="zoomMeetingButton" aria-label="Zoom Meeting">
+  <i class="fas fa-video" id="zoom"></i><span>Zoom</span>
+</button>
+</form>
+
+
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="message-input">
+            <input type="text" id="message-input" placeholder="Type something..."  >
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    </div>
+    <div class="title_container_comm">
+      <div class="discoverycall_container">
+        <div class="title_header_container">
+          <div class="header_holder_title">
+            <div class="divspan">DISCOVERY CALL B / W FREELANCER & CLIENT</div>
+          </div>
+          
+          <div class="header_holder_title_blur"> SK</div>
+        </div>
+        <!-- <div class="zoom_container_meetings">ZOOM</div> -->
+      </div>
+  
+      <div class="explaination_communication_container">
+        Effective communication between a freelancer and <br>
+         a client is crucial for the success of any project.
+      </div>
+  
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

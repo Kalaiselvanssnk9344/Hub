@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOT PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mavoncss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+    <!-- nav_bar_container start -->
+    <div class="nav_bar_container common_container main_navve">
+        <div class="web_name_container">MAVENHUB</div>
+        <div class="search_bar_container">
+            <!-- <div class="input_search_container"><input type="text" class="search_bar_home_container" placeholder="Search here..."></div>
+            <div class="search_symbol_container"><div class="magnify_class_holder">
+                <i class="fa-solid fa-magnifying-glass magnifying_glass"></i>
+            </div></div> -->
+            <div class="container">
+                <input id="searchbar" 
+                       onkeyup="search_animal()" 
+                       type="text" name="search" 
+                       placeholder="Search..">
+        
+                <ul id='list'>
+                    <li class="animals"><a href="./frontendmavon.html" class="forfrontend">Frontend</a></li>
+                    <li class="animals"><a href="./frontendmavon.html" class="forbackend">Backend</a></li>
+                    <li class="animals"><a href="./frontendmavon.html" class="forfullsatck">FullStack Developer</a></li>
+        
+                </ul>
+            </div>
+        
+        </div>
+        <div class="right_navbar_container">
+            <div class="howitworks_container"><a href="" class="how_link">HOW IT WORKS</a></div>
+            <div class="login_home_container"><a href="./mavonlogin.html" class="how_link">LOGIN</a></div>
+            <div class="signup_home_container"><a href="./mavonsignup.html" class="how_link">SIGN UP</a></div>
+            
+        </div>
+    </div>
+
+        <!-- profie_button_to_dialogue_container start -->
+<div class="profie_button_to_dialogue_container">
+    <div class="profile_container_button"><div class="profile_button_holder">PROFILE</div></div>
+    <div class="profile_bg_blur_container"></div>
+    <div class="dialogue_profile_container">HAVING DIFFERENT TYPES OF STUFFS IN YOUR PORTFOLIO CAN
+        ENHANCE RETURNS.</div>
+
+
+
+</div>
+
+
+    <div id="chat-box"></div>
+    <div style="display: flex; justify-content: spac; padding: 10px;">
+        <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+        <button id="send-btn">Send</button>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="botjs.js"></script>
+</body>
+</html>

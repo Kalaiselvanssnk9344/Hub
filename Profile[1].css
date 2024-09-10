@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.image .profile-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  color: #fff;
+}
+.data h2{
+  font-size: 33px;
+  font-weight: 600;
+  color: #fff;
+}
+span{
+  font-size: 18px;
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #fff;
+}
+.social-links a{
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #fff;
+}
+.social-links a:hover{
+  color: #0077b5; /* Default hover color for LinkedIn */
+}
+.social-links a:nth-child(2):hover{
+  color: #333; /* GitHub color */
+}
+.social-links a:nth-child(3):hover{
+  color: #C13584; /* Instagram color */
+}
+.row{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.row .info{
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+}
+.proficiency{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  color: #fff;
+}
+.proficiency .info{
+  text-align: center;
+  padding: 10px 20px;
+  flex-basis: 50%;
+  color: #fff;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.buttons .btn{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+  background: linear-gradient(to left, #0c4a5f 0%, #b8678f 100%);
+}
+.buttons .btn:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+}
+/* Keyframe animations */
+@keyframes scaleUp {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px rgba(0, 150, 255, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(0, 150, 255, 0.7); }
+  100% { box-shadow: 0 0 10px rgba(0, 150, 255, 0.5); }
+}
+
+/* Profile Image Container */
+.pimage {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #d40ef7ad; /* Static border */
+  background: #f9f9f9; /* Light background for better visibility */
+}
+
+/* Profile Image Styles */
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.pimage:hover .profile-pic {
+  animation: scaleUp 1s; /* Scale animation */
+}
+
+/* Animated Border */
+.pimage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: pulse 2s infinite; /* Pulsating border effect */
+  pointer-events: none; /* Prevent interaction with the pseudo-element */
+}
+
+/* Loader Animation */
+.pimage::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #33ccff;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite; /* Rotating loader */
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Hidden by default */
+}
+
+/* Show loader when image is not loaded */
+.pimage img.loading + .loading-indicator {
+  opacity: 1;
+}

@@ -1,0 +1,209 @@
+body {
+    font-family: "Nunito", sans-serif;
+    /* background-image: url(https://wallpapercrafter.com/th800/5380-lines-waves-abstraction-dark-purple-4k.jpg); */
+    background-size:cover;
+    /* background-color: #c9d1d9; */
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #c9d1d9; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1.5rem;
+}
+
+.title_container_comm{
+    /* border: 2px solid red; */
+    width: 50%;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* grid-template-columns: 100%; */
+    height: 90vh;
+}
+.discoverycall_container{
+    /* border: 10px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    margin: 16rem 0rem 0rem 8rem;
+
+}
+.title_header_container{
+    position: relative;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.header_holder_title{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+
+}
+.divspan{
+    /* position: absolute; */
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.header_holder_title_blur{
+    width: 90%;
+    /* border: 2px solid red; */
+    filter: blur(60px);  
+    background-color: #FF00F5;
+    height: 2rem;
+    position: absolute;
+    z-index: -1;
+}
+.zoom_container_meetings{
+    /* border: 0.1rem solid white; */
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0E9E95;
+}
+.explaination_communication_container{
+    margin-left: 10rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    /* color: grey; */
+}
+
+.title_container_comm2{
+    /* border: 0.1rem solid gray; */
+    border-radius: 0.5rem;
+    width: 50%;
+    height: 90vh;
+    padding: 1rem;  
+
+}
+
+.chat-container {
+    width: 420px;
+    /* margin: 50px auto; */
+    margin: 0 auto;
+    /* background: #161b22;  */
+    /* Darker blue-black container */
+    border-radius: 0.5rem;
+    /* box-shadow: 0 4px 30px rgba(242, 238, 238, 0.9); */
+    border: 0.1rem solid white;
+    overflow: hidden;
+    
+
+}
+
+.chat-header {
+    /* background-image: url(https://wallpapercave.com/wp/wp2801571.jpg); */
+    background-size: cover;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    /* box-shadow: 0 4px 30px #c1c8d0; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 0.1rem solid white;
+
+    background-color: rgb(140, 200, 237);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     */
+}
+.chat-header > h2{
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+.chat-box {
+    height: 350px;
+    overflow-y: auto;
+    padding: 15px;
+    /* box-shadow: 0 4px 15px #c1c8d0; */
+    background-size: cover;
+    /* background-image: url(https://tse1.mm.bing.net/th?id=OIP.TPhDCJi4ZVuop2h_emctdAHaL2&pid=Api&P=0&h=180); */
+    /* border-bottom: 1px solid #30363d; */
+    /* background-color: rgb(34, 36, 38); */
+    /* background-color: rgb(35, 103, 115); */
+    /* background-image: url(/whatassng.jpg); */
+    background-color: black;
+
+
+}
+
+.message {
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 25px;
+    max-width: 75%;
+    word-wrap: break-word;
+    /* box-shadow: 0 2px 8px rgba(249, 248, 251, 0.3); */
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* box-shadow: 0 10px 25px #c1c8d0; */
+    /* background-image: url(https://e0.pxfuel.com/wallpapers/2/746/desktop-wallpaper-premium-illustration-of-dark-violet-oil-paint-strokes-textured-dark-purple-purple-iphone-purple.jpg); */
+    border-top: 1px solid hsl(212, 12%, 21%);
+    background-color: rgb(140, 200, 237);
+}
+/* #message-input::before{
+    content: "Client";
+} */
+
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 0.1rem solid grey;
+    /* background-color: #0d1117;  */
+    /* Dark blue background for input */
+    /* color: #ffffff; */
+    font-size: 1em;
+    /* background-color: blue; */
+    /* background-color: transparent; */
+}
+#message-inputclient::before{
+    
+    /* background-color: black; */
+    /* content: "Client"; */
+}
+/*  */
+button {
+    background-color: rgb(0, 132, 255); /* Darker shade for send button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #6e7681; /* Lighter shade on hover */
+}
+#zoomMeetingButton {
+    background: none;
+    border:solid 0.1rem white;  
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    /* margin-left: 317px; */
+    text-align:right;
+    align-items: center;
+    width: 8rem;
+    padding-left: 2rem;
+  }
+  span{
+    padding-left: 1.5rem;
+  }
+
+  #zoomMeetingButton i {
+    margin-left: -20px;
+  }

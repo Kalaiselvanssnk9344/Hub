@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Experience Certificate</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        button, input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover, input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+        .upload-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload your EXPERIENCE certificate</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="certificate" required>
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+
+    <div class="upload-container">
+        <button onclick="viewUploads()">VIEW UPLOADS</button>
+    </div>
+
+    <script>
+        function viewUploads() {
+            window.location.href = "/uploads";
+        }
+    </script>
+</body>
+</html>

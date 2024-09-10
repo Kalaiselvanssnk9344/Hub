@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Communication Hub</title>
+    <link rel="stylesheet" href="statusbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="mavoncss.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <!-- Project Overview -->
+        <section class="project-overview">
+            <h1>PROJECT COMMUNICATION HUB</h1>
+            <div class="overview-card">
+                <h2>PROJECT OVERVIEW</h2>
+                <p><strong>Project Title:</strong> <span id="projectTitle">FRONTEND PAGE</span></p>
+                <p><strong>Client:</strong> <span id="clientName">SANDY</span></p>
+                <p><strong>Developer(s):</strong> <span id="developers">NEAN</span></p>
+                <p><strong>Start Date:</strong> <span id="startDate">20/08/2024</span></p>
+                <p><strong>Deadline:</strong> <span id="deadline">22/08/2024</span></p>
+                <p><strong>Project Status:</strong> <span id="status" class="status">ON</span></p>
+            </div>
+        </section>
+
+        <!-- Project Updates -->
+        <!-- <section class="project-updates">
+            <h2>📈 Project Updates</h2>
+            <div class="update-card">
+                <h3>Milestone Updates</h3>
+                <div class="progress-bar" id="progressBar"></div>
+                <input type="number" id="progressInput" placeholder="Update Progress (%)">
+                <button onclick="updateProgress()">Update Progress</button>
+                <input type="text" id="statusInput" placeholder="Update Status">
+                <button onclick="updateStatus()">Update Status</button>
+            </div>
+        </section> -->
+
+        <!-- File Sharing -->
+        <section class="file-sharing">
+            <h2>FILE SHARING</h2>
+            <!-- <div class="file-upload">
+                <input type="file" id="fileInput">
+            </div>
+            <div id="fileList"></div> -->
+            <div class="containerrr">
+                <!-- <h1>Upload and Display Certificate</h1> -->
+            
+                <div class="upload-container">
+                  <!-- <label for="certificate-upload">Upload Your Certificate:</label> -->
+                  <input type="file" id="certificate-upload" accept="image/*">
+                </div>
+            
+                <div class="certificate-preview" id="certificate-preview">
+                  <h2>Certificate Preview:</h2>
+                  <img id="certificate-image" src="" alt="Certificate Preview">
+                </div>
+              </div>
+        </section>
+
+        <!-- Notifications -->
+        <section class="notifications">
+            <h2>NOTIFICATIONS</h2>
+            <div class="notification-card">
+                <p>Custom Alerts: <span class="alert">New Message</span></p>
+            </div>
+        </section>
+    </div>
+
+
+    
+    
+
+    <script src="statusjs.js"></script>
+</body>
+</html>

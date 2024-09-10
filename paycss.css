@@ -1,0 +1,113 @@
+body {
+    font-family: "Nunito", sans-serif;
+
+    background-color: #c2eaf6;
+    padding: 20px;
+    color: rgba(140, 193, 239, 0.664);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    /* background: rgb(49, 11, 47); */
+    background-color: rgb(137, 194, 252);
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid gray;
+    /* background-color: white; */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800    ;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    /* color: white; */
+}
+
+input[type="text"],
+input[type="email"],
+select :checked{
+    outline: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-50, .col-33 {
+    flex: 1;
+    padding-right: 10px;
+    color: black;
+}
+select{
+    /* background-color: black; */
+    color: gray;
+}
+option{
+    color: black;
+}
+.choose{
+    color: black;
+}
+.col-33 {
+    max-width: 33.33%;
+}
+
+.card-types img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: rgb(0, 145, 255);
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Nunito", sans-serif;
+}
+
+.btn:hover {
+    /* background-color: #a04598; */
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .col-50, .col-33 {
+        padding-right: 0;
+        max-width: 100%;
+    }
+}
+/* rgb(0, 145, 255)
+rgb(137, 194, 252)
+#c2eaf6 */

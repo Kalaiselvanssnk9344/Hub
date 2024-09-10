@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATUS</title>
+    <link rel="stylesheet" href="mavoncss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="mavoncss.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="newstatus_main_container common_container">
+
+            <!-- nav_bar_container start -->
+    <div class="nav_bar_container common_container main_navve">
+        <div class="web_name_container">MAVENHUB</div>
+        <div class="search_bar_container">
+            <!-- <div class="input_search_container"><input type="text" class="search_bar_home_container" placeholder="Search here..."></div>
+            <div class="search_symbol_container"><div class="magnify_class_holder">
+                <i class="fa-solid fa-magnifying-glass magnifying_glass"></i>
+            </div></div> -->
+            <div class="container">
+                <input id="searchbar" 
+                       onkeyup="search_animal()" 
+                       type="text" name="search" 
+                       placeholder="Search..">
+        
+                <ul id='list'>
+                    <li class="animals"><a href="./frontendmavon.html" class="forfrontend">Frontend</a></li>
+                    <li class="animals"><a href="./frontendmavon.html" class="forbackend">Backend</a></li>
+                    <li class="animals"><a href="./frontendmavon.html" class="forfullsatck">FullStack Developer</a></li>
+        
+                </ul>
+            </div>
+        
+        </div>
+        <div class="right_navbar_container">
+            <div class="howitworks_container"><a href="" class="how_link">HOW IT WORKS</a></div>
+            <div class="login_home_container"><a href="./mavonlogin.html" class="how_link">LOGIN</a></div>
+            <div class="signup_home_container"><a href="./mavonsignup.html" class="how_link">SIGN UP</a></div>
+            
+        </div>
+    </div>
+    <!-- new_to_letstaken_on_container start  -->
+    <div class="new_to_letstaken_on_container2" >
+
+        <div class="new_left_container"></div>
+
+        <div class="new_center_container">
+        <div class="new_container_holder">
+            <div class="new_container">
+                <div class="new_small_box_container">NEW</div>
+                <div class="wejustexplore_container">We Just Explore Our Latest Integration!!!</div>
+            </div>
+        </div>
+        <div class="raise_container">IT IS MUCH MORE DIFFICULT TO MEASURE NON-PERFORMANCE 
+            THAN PERFORMANCE.</div>
+        <div class="outplatform_container">Our platform empower Global connections, serving as your gateway to talent and oppourtunities</div>
+        <!-- <div class="letstakenon_container_holder"><div class="letstakenon_container">STATUS</div> -->
+    </div>
+    </div>
+ 
+
+        <div class="new_right_container"></div>
+
+    </div>
+ 
+    <!-- first status update container  -->
+<div class="ex_title_to_blur_container ">
+
+    <div class="status_update_container " >
+        <div class="status_title_container">
+
+            <div class="status_title_holder">STATUS UPDATE</div>
+            <div id="create_new_week_container">+ ADD</div>
+        </div>
+        <div class="week1_container">WEEK 1</div>
+        
+        <div id="img_to_fullfill_container">
+            <div class="img_container_status">
+                <img src="./ppt4(3).png" alt="" class="mainpageforstatusupdate">
+            </div>
+
+
+            <div class="perfom_to_fullfill_container">
+                <div class="performance_test_container">
+                    <div class="perform_title_holder">PERFORMANCE REPORT</div>
+                    <div class="progressbar_holder">
+                    <div id="overall_perform_container">
+                        <div class="op_title_container">OVERALL</div>
+                        <div id="circle_progress_overall_container"><div class="percent">25%</div></div>
+                    </div>
+                    <div id="week1_container">
+                        <div class="op_title_container">WEEK 1</div>
+                        <div id="circle_progress_overall_container_week1"><div id="percent11">0%</div></div>
+                    </div>
+                    <div id="week2_container">
+                        <div class="op_title_container">WEEK 2</div>
+                        <div id="circle_progress_overall_container_week2"><div class="percent">25%</div></div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="fullfillment_container" >
+                    <div class="fullfill_title_holder">FULFILLMENT ( WEEK 1 )</div>
+                    <div id="navbar_fullfill_container11" onclick="firstcall()">
+                        <div class="content_fullfill_container" >NAVBAR</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+
+                    <div id="navbar_fullfill_container2" onclick="secondcall()">
+                        <div class="content_fullfill_container">MAINPAGE</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder2"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+
+                    <div id="navbar_fullfill_container3" onclick="thirdcall()">
+                        <div class="content_fullfill_container">ACTIONS</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder3"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+                    <div id="navbar_fullfill_container4" onclick="fourthcall()">
+                        <div class="content_fullfill_container">HEADER</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder4"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+    </div>
+
+
+
+    <div class="status_blur_container ">
+
+    </div>
+
+
+</div>
+
+
+
+
+<!-- second status update container  -->
+<div id="status_update_holderre2">
+<div class="ex_title_to_blur_container " >
+    <!-- <div id="status_update_holderre"> -->
+    <div class="status_update_container2 " >
+        <!-- <div class="status_title_container">
+
+            <div class="status_title_holder">STATUS UPDATE</div>
+            <div id="create_new_week_container">+ ADD</div>
+        </div> -->
+        <div class="week1_container week_2_with_input_file_container">
+            <div class="week2_title_container">WEEK 2</div>
+            <div class="uppload_holder"><label for="img_upload_container" class="label_for_file_upload"><span>UPLOAD</span><i class="fa-solid fa-arrow-up-from-bracket"></i></label><input type="file" id="img_upload_container"></div>
+        </div>
+        
+        <div id="img_to_fullfill_container2">
+
+            <div class="img_container_status21">
+                <!-- <input type="file" id="img_upload_container"> -->
+                <div id="certificate_preview">
+                    <img src="" alt="" id="preview" >
+                </div>
+                <!-- <img src="" alt="" class="mainpageforstatusupdate21"> -->
+            </div>
+
+
+            <div class="perfom_to_fullfill_container">
+                <div class="performance_test_container">
+                    <div class="perform_title_holder">PERFORMANCE REPORT</div>
+                    <div class="progressbar_holder">
+                    <div id="overall_perform_container">
+                        <div class="op_title_container">OVERALL</div>
+                        <div id="circle_progress_overall_container13"><div id="percent13">25%</div></div>
+                    </div>
+                    <div id="week1_container">
+                        <div class="op_title_container">WEEK 2</div>
+                        <div id="circle_progress_overall_container_week12"><div id="percent12">0%</div></div>
+                    </div>
+                    <div id="week2_container">
+                        <div class="op_title_container">WEEK 3</div>
+                        <div id="circle_progress_overall_container_week2"><div class="percent">25%</div></div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="fullfillment_container" >
+                    <div class="fullfill_title_holder">FULFILLMENT ( WEEK 2 )</div>
+                    <div id="navbar_fullfill_container21" onclick="firstcall21()">
+                        <div class="content_fullfill_container" >NAVBAR</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder21"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+
+                    <div id="navbar_fullfill_container22" onclick="secondcall22()">
+                        <div class="content_fullfill_container">MAINPAGE</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder22"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+
+                    <div id="navbar_fullfill_container23" onclick="thirdcall23()">
+                        <div class="content_fullfill_container">ACTIONS</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder23"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+                    <div id="navbar_fullfill_container24" onclick="fourthcall24()">
+                        <div class="content_fullfill_container">HEADER</div>
+                        <div class="example_tick_container"></div>
+                        <div id="tick_img_holder24"><img src="./mdi_tick-decagram.png" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+    </div>
+
+
+
+    <div class="status_blur_container ">
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+   
+<!-- footer -->
+<footer class="foot container">
+    <div class="foot_holder1">
+    <div class="foot_container1">
+      <p class="foot_title">MAVENHUB</p>
+      <p class="foot_about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem fuga harum voluptate?</p>
+    </div>
+    <div class="foot_container2">
+      <div class="contain2_title">Address</div>
+      <div class="value1_foot">Covai, TamilNadu</div>
+      <div class="value2_foot">skalai9344@gmail.com</div>
+      <div class="value3_foot">KALAI SK</div>
+      <div class="value4_foot">+91 9344338063</div>
+    </div>
+    <div class="foot_container3">
+      <div class="contain2_title">Support</div>
+      <div class="value1_foot">Account</div>
+      <div class="value2_foot">Login / Register</div>
+      <div class="value3_foot">Cart</div>
+      <div class="value4_foot">Shop</div>
+    </div>
+    <div class="foot_container4">
+      <div class="contain2_title">Help</div>
+      <div class="value1_foot">Privacy Policy</div>
+      <div class="value2_foot">Terms of use</div>
+      <div class="value3_foot">FAQ's</div>
+      <div class="value4_foot">Contact</div>
+    </div>
+    </div>
+    <div class="foot_holder2">Copyright MAVENHUB 2024 July. All right reserved</div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="mavon.js"></script>
+</body>
+</html>

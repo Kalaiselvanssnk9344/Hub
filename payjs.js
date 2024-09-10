@@ -1,0 +1,1 @@
+document.getElementById('checkoutBtn').addEventListener('click',function(){alert('Payment Successful');});
